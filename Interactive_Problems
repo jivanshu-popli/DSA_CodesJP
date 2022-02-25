@@ -1,0 +1,16 @@
+Interactive Problem - 
+A problem where your solutions interacts with a grader. (problem judge)
+
+Interacting with the judge-
+1. When we print output on console/screen, expensive project.
+2. Language try to store the output(buffer output).
+3. When the program terminates, it prints all the output in one go.
+
+If you want to flush the output everytime- then use cout<<flush; (if using cin and cout).
+
+endl actually works as cout<<'\n'<<flush; Therefore, it's a little slower
+
+We use:
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
